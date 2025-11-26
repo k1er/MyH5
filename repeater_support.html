@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Repeater 应用支持页面 - 常见问题解答、使用指南和联系方式">
+    <title>AI Repeater - 应用支持</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .faq-item {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        .faq-item h3 {
+            color: #667eea;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .faq-item p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            opacity: 0.95;
+            font-size: 0.95em;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .contact-box p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .contact-box a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid white;
+            transition: opacity 0.2s;
+        }
+
+        .contact-box a:hover {
+            opacity: 0.8;
+        }
+
+        .device-requirements {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .device-requirements h4 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+
+        .device-requirements ul {
+            margin-left: 20px;
+            color: #856404;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .section h2 {
+                font-size: 1.5em;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Repeater</h1>
+            <p>本地 AI 转录 · 智能语言学习</p>
+        </header>
+
+        <div class="content">
+            <!-- 核心功能 -->
+            <div class="section">
+                <h2>核心功能</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>🤖 本地 AI 转录</h3>
+                        <p>采用 WhisperKit 引擎，完全离线处理，保护隐私</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🎯 精准播放</h3>
+                        <p>词级时间戳，点击段落即可跳转播放</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>📚 智能生词本</h3>
+                        <p>间隔重复学习系统，帮助记忆</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🎙️ 跟读练习</h3>
+                        <p>录音对比，提升口语能力</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>📝 字幕导出</h3>
+                        <p>支持 SRT、JSON、纯文本格式</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🌍 多语言支持</h3>
+                        <p>支持 20+ 种语言识别</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 常见问题 -->
+            <div class="section">
+                <h2>常见问题</h2>
+
+                <div class="faq-item">
+                    <h3>❓ AI 转录功能需要什么设备？</h3>
+                    <p>AI 转录功能需要搭载 A13 仿生芯片及以上的设备，包括：</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>iPhone 11 及更新机型</li>
+                        <li>iPad（第 9 代）及更新机型</li>
+                        <li>iPad Air（第 4 代）及更新机型</li>
+                        <li>iPad Pro（2018 年及更新机型）</li>
+                    </ul>
+                    <p style="margin-top: 10px;">不支持 AI 转录的设备仍可使用播放、生词本、跟读等其他功能。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ 如何导入音视频文件？</h3>
+                    <p>有多种方式导入文件：</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>在应用内点击"导入文件"按钮，从文件应用中选择</li>
+                        <li>在其他应用（如 Safari、文件应用）中使用"分享"功能，选择"AI Repeater"</li>
+                        <li>支持的格式：MP3、WAV、M4A、MP4、MOV、M4V</li>
+                    </ul>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ 转录需要多长时间？</h3>
+                    <p>转录时间取决于音频长度、选择的模型和设备性能：</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Tiny 模型：约为音频时长的 1/4</li>
+                        <li>Base 模型：约为音频时长的 1/3</li>
+                        <li>Small 模型：约为音频时长的 1/2</li>
+                        <li>Large-v3 模型：约为音频时长（最高精度）</li>
+                    </ul>
+                    <p style="margin-top: 10px;">例如：10 分钟音频使用 Base 模型约需 3-4 分钟。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ 转录的文本准确吗？</h3>
+                    <p>准确度取决于多个因素：</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>音频质量：清晰的音频转录效果更好</li>
+                        <li>语言类型：英语、中文等主流语言效果较好</li>
+                        <li>模型选择：Large-v3 模型精度最高</li>
+                        <li>背景噪音：噪音较少的音频效果更好</li>
+                    </ul>
+                    <p style="margin-top: 10px;">对于专业内容，建议使用字幕编辑功能进行校对。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ 数据会上传到服务器吗？</h3>
+                    <p><strong>不会。</strong>AI Repeater 采用完全本地化处理：</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>所有音视频文件存储在您的设备上</li>
+                        <li>AI 转录在设备端完全离线处理</li>
+                        <li>不上传任何音频、转录文本到服务器</li>
+                        <li>不收集个人隐私数据</li>
+                    </ul>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ 如何使用生词本功能？</h3>
+                    <p>生词本使用步骤：</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>在转录结果页面，长按或点击"收藏"图标添加到生词本</li>
+                        <li>在主页点击"生词本"标签查看所有收藏</li>
+                        <li>系统会根据间隔重复算法提醒您复习</li>
+                        <li>点击收藏的句子可以直接跳转播放</li>
+                    </ul>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ 跟读功能如何使用？</h3>
+                    <p>跟读练习步骤：</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>在转录结果页面选择要跟读的段落</li>
+                        <li>点击"跟读"按钮进入跟读模式</li>
+                        <li>先播放原音，暂停后进行录音跟读</li>
+                        <li>录音会自动保存，可以回听对比</li>
+                        <li>在跟读历史中查看所有录音记录</li>
+                    </ul>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ 可以导出字幕吗？</h3>
+                    <p>支持多种格式导出：</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>SRT 格式：标准字幕格式，可在视频播放器中使用</li>
+                        <li>JSON 格式：包含完整的时间戳和文本数据</li>
+                        <li>纯文本格式：仅包含文本内容</li>
+                    </ul>
+                    <p style="margin-top: 10px;">在转录结果页面点击"导出"按钮选择格式即可。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ 应用占用空间大吗？</h3>
+                    <p>应用大小取决于下载的 AI 模型：</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>应用本体：约 50 MB</li>
+                        <li>Tiny 模型：约 40 MB</li>
+                        <li>Base 模型：约 140 MB</li>
+                        <li>Small 模型：约 480 MB</li>
+                        <li>Large-v3 模型：约 3 GB（最高精度）</li>
+                    </ul>
+                    <p style="margin-top: 10px;">您可以根据需要选择下载不同的模型，首次使用时会提示下载。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ 为什么转录后没有中文/英文翻译？</h3>
+                    <p>翻译功能需要单独启用：</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>在转录结果页面点击"翻译"按钮</li>
+                        <li>选择目标语言进行翻译</li>
+                        <li>翻译使用系统自带的翻译服务</li>
+                        <li>首次使用时需要下载语言包（自动进行）</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 使用技巧 -->
+            <div class="section">
+                <h2>使用技巧</h2>
+
+                <div class="faq-item">
+                    <h3>💡 提高转录准确度</h3>
+                    <ul style="margin-left: 20px;">
+                        <li>使用音质清晰、噪音较少的音频</li>
+                        <li>选择合适的 AI 模型（精度需求高选 Large-v3）</li>
+                        <li>在设置中手动指定音频语言（如果明确知道）</li>
+                        <li>对于混合语言内容，使用自动检测模式</li>
+                    </ul>
+                </div>
+
+                <div class="faq-item">
+                    <h3>💡 高效学习方法</h3>
+                    <ul style="margin-left: 20px;">
+                        <li>使用段落循环功能反复听难点内容</li>
+                        <li>调整播放速度（0.75x 适合初学，1.25x 适合进阶）</li>
+                        <li>将不熟悉的句子添加到生词本，定期复习</li>
+                        <li>使用跟读功能练习发音和语感</li>
+                        <li>导出字幕后在其他设备上继续学习</li>
+                    </ul>
+                </div>
+
+                <div class="faq-item">
+                    <h3>💡 优化设备性能</h3>
+                    <ul style="margin-left: 20px;">
+                        <li>转录大文件时建议连接电源</li>
+                        <li>首次下载模型时使用 Wi-Fi</li>
+                        <li>定期清理不需要的音频文件释放空间</li>
+                        <li>根据设备性能选择合适的模型（较旧设备建议用 Tiny/Base）</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 系统要求 -->
+            <div class="section">
+                <h2>系统要求</h2>
+                <div class="device-requirements">
+                    <h4>⚠️ 最低要求</h4>
+                    <ul>
+                        <li>iOS 17.0 或更高版本</li>
+                        <li>约 200 MB 可用存储空间（不含模型）</li>
+                    </ul>
+                    <h4 style="margin-top: 15px;">✅ AI 转录功能要求</h4>
+                    <ul>
+                        <li>A13 仿生芯片及以上</li>
+                        <li>建议 3 GB 以上可用内存</li>
+                        <li>建议 2 GB 以上存储空间（用于下载 AI 模型）</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 联系我们 -->
+            <div class="section">
+                <h2>联系我们</h2>
+                <div class="contact-box">
+                    <h3>📧 需要帮助？</h3>
+                    <p>如果您遇到问题或有任何建议，欢迎通过以下方式联系我们：</p>
+                    <p style="margin-top: 20px;">
+                        <strong>邮箱：</strong><a href="mailto:ankek1er@gmail.com">ankek1er@gmail.com</a>
+                    </p>
+                    <p style="margin-top: 15px; font-size: 0.95em; opacity: 0.9;">
+                        我们会在 24-48 小时内回复您的邮件
+                    </p>
+                </div>
+            </div>
+
+            <!-- 关于应用 -->
+            <div class="section">
+                <h2>关于 AI Repeater</h2>
+                <div class="faq-item">
+                    <p>
+                        AI Repeater 是一款专为语言学习者设计的智能工具，采用先进的 WhisperKit 本地 AI 引擎，
+                        为您提供完全离线的语音转文本服务。无论您是学习英语、日语、韩语还是其他语言，
+                        AI Repeater 都能帮助您更高效地进行听力训练和口语练习。
+                    </p>
+                    <p style="margin-top: 15px;">
+                        我们坚持隐私保护原则，所有数据处理完全在您的设备上进行，不上传任何个人信息到服务器。
+                    </p>
+                    <p style="margin-top: 15px;">
+                        <strong>当前版本：</strong>1.0.0<br>
+                        <strong>最后更新：</strong>2025 年
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 AI Repeater. All rights reserved.</p>
+            <p style="margin-top: 10px;">本应用使用 WhisperKit 技术，遵循 MIT 开源协议</p>
+        </footer>
+    </div>
+</body>
+</html>
